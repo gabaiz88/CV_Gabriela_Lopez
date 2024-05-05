@@ -391,4 +391,11 @@ html{
     .contacto .contenido-seccion .fila{
         display: block;
     }
+    .habilidades .contenido-seccion .proyectos .gallery {
+        margin-top: 50px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
 }
