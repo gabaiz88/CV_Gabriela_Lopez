@@ -418,18 +418,7 @@ html {
   .habilidades .contenido-seccion .proyectos .gallery > div:hover {
     cursor: pointer;
     .boton_galeria {
-      animation: myAnim none;
-      display: inline;
-    }
-  }
-  @keyframes myAnim {
-    0% {
-      opacity: 1;
-      transform: translateY(180px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(180px);
+      animation: none;
     }
   }
   .boton_galeria {
