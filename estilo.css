@@ -103,7 +103,6 @@ html {
   background-color: #940253;
   box-shadow: 0 0 20px #fff;
 }
-
 .inicio .contenido-seccion .info .cv a {
   background-color: #000;
   border-color: #940253;
@@ -111,13 +110,11 @@ html {
   color: #940253;
   width: 150px;
 }
-
 .inicio .contenido-seccion .info .cv a:hover {
   color: #fff;
   background-color: #940253;
   box-shadow: 0 0 25px #fff;
 }
-
 .inicio .contenido-seccion .foto {
   position: relative;
 }
@@ -198,12 +195,6 @@ html {
   margin: auto;
   padding: 0 10px;
 }
-/*.habilidades .contenido-seccion .proyectos{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}*/
 .habilidades .contenido-seccion .proyectos .gallery {
   margin-top: 50px;
   height: 400px;
@@ -219,7 +210,7 @@ html {
 }
 .habilidades .contenido-seccion .proyectos .gallery > div:hover {
   flex: 6;
-  opacity: 100%;
+  opacity: 1;
   cursor: pointer;
   .boton_galeria {
     animation: myAnim 3s ease 0s 1 normal forwards;
@@ -239,6 +230,16 @@ html {
 .boton_galeria {
   display: none;
   border: none;
+}
+.boton_galeria > a {
+  background-color: #940253;
+  border-color: #940253;
+  color: #fff;
+}
+.boton_galeria > a:hover {
+  background-color: #940253;
+  border-color: #940253;
+  box-shadow: 0 0 20px #000000;
 }
 .habilidades .contenido-seccion h3 {
   text-transform: uppercase;
@@ -412,10 +413,28 @@ html {
     display: block;
   }
   .habilidades .contenido-seccion .proyectos .gallery {
-    margin-top: 50px;
-    height: 400px;
-    display: flex;
     flex-direction: column;
-    gap: 1rem;
+  }
+  .habilidades .contenido-seccion .proyectos .gallery > div:hover {
+    cursor: pointer;
+    .boton_galeria {
+      animation: myAnim none;
+      display: inline;
+    }
+  }
+  @keyframes myAnim {
+    0% {
+      opacity: 1;
+      transform: translateY(180px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(180px);
+    }
+  }
+  .boton_galeria {
+    margin-top: 180px;
+    display: inline;
+    opacity: 0.9;
   }
 }
