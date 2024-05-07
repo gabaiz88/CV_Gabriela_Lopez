@@ -130,7 +130,6 @@ html {
 .selected_lang{
     display: flex;
     gap: 15px;
-    
 }
 .selected_lang .lang_flag{
     text-decoration: none;
@@ -167,6 +166,9 @@ html {
   max-width: 700px;
   margin: auto;
   color: #666;
+}
+.sobremi .contenido-seccion .sobre_mi_p{
+    width: 500px;
 }
 .sobremi .contenido-seccion .fila {
   display: flex;

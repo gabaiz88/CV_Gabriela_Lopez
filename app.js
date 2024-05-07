@@ -26,3 +26,27 @@ function changeLanguage(lang) {
     location.reload();
 }
 
+var language = {
+    eng: {
+        sobre_mi: "About me",
+        saludo: "🌸 Hello! My name is Gabriela, welcome to my profile! 👋🏼",
+        sobre_mi2: "🔎 On my way to becoming a Data Analyst using SQL/Excel. 📊 Data visualization with Power BI. 💻 Knowledge in Project Management, PRINCE2 Foundation Certificate. 🏦 Experience in Financial Services and Banking Industry.",
+    },
+    es: {
+        sobre_mi: "Sobre mí",
+        saludo: "🌸 Hola! Me llamo Gabriela, bienvenid@ a mi perfil! 👋🏼",
+        sobre_mi2: "🔎 En camino a convertirme en Analista de Datos utilizando SQL/ Excel. 📊 Visualización de datos con Power BI. 💻 Conocimientos en Project Management, PRINCE2 Foundation Certificate. 🏦 Experiencia en Servicios Financieros e Industria Bancaria.",
+    },
+}
+
+if (window.location.hash) {
+    if (window.location.hash == "#es") {
+      sobre_mi.textContent = language.es.sobre_mi;
+      saludo.textContent = language.es.saludo;
+      sobre_mi2.textContent = language.es.sobre_mi2;
+    } else if (window.location.hash == "#eng") {
+      sobre_mi.textContent = language.eng.sobre_mi;
+      saludo.textContent = language.eng.saludo;
+      sobre_mi2.textContent = language.eng.sobre_mi2;
+    }
+} 

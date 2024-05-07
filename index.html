@@ -12,7 +12,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="estilo.css" />
     <link rel="stylesheet" href="flag-icon.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
     <title>CV GABRIELA LOPEZ</title>
 </head>
 
@@ -32,10 +32,10 @@
                     <a href="#contacto">Contacto</a>
                     <div class="selected_lang">
                         <li>
-                            <button class="lang_flag" onclick="changeLanguage('es')"><i class="fi fi-gb"></i></button>
+                            <button class="lang_flag" onclick="changeLanguage('eng')"><i class="fi fi-gb"></i></button>
                         </li>
                         <li>
-                            <button class="lang_flag" onclick="changeLanguage('eng')"><i class="fi fi-es"></i></button>
+                            <button class="lang_flag" onclick="changeLanguage('es')"><i class="fi fi-es"></i></button>
                         </li>
                     </div>
                 </nav>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="cv">
                     <a class="btn btn-primary" href="./cv/Gabriela Lopez CV 2024.pdf" role="button" target="_blank"><i
-                            class="fa fa-download" aria-hidden="true"></i> Descargar CV</a>
+                            class="fa fa-download" aria-hidden="true"></i> Download CV</a>
                 </div>
             </div>
             <div class="foto">
@@ -64,52 +64,13 @@
     <!-- SECCION SOBRE MI -->
     <section class="sobremi" id="sobremi">
         <div class="contenido-seccion">
-            <h2 class="titulo-seccion">Sobre Mi</h2>
-            <p class="especial">
+            <h2 class="titulo-seccion" id="sobre_mi">Sobre mí</h2>
+            <p class="especial" id="saludo">
                 🌸 Hola! Me llamo Gabriela, bienvenid@ a mi perfil! 👋🏼
             </p>
-            <p>
-                <br> 🔎 En camino a convertirme en Analista de Datos utilizando SQL/ Excel. <br> 📊
-                Visualización de datos con Power BI. <br> 💻 Conocimientos en Project
-                Management, PRINCE2 Foundation Certificate. <br> 🏦 Experiencia en Servicios Financieros e Industria
-                Bancaria.
+            <p class="sobre_mi_p" id="sobre_mi2">
+                🔎 En camino a convertirme en Analista de Datos utilizando SQL/ Excel. 📊 Visualización de datos con Power BI. 💻 Conocimientos en Project Management, PRINCE2 Foundation Certificate. 🏦 Experiencia en Servicios Financieros e Industria Bancaria.
             </p>
-
-            <div class="fila">
-                <!--
-                    <div class="col">
-                    <i class="fa-solid fa-user"></i>
-                    <span class="titulo-detalle">Perfil</span>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Officiis, provident esse. Nesciunt quod eveniet dolorem
-                        necessitatibus iure, suscipit similique provident fugiat excepturi
-                        commodi
-                    </p>
-                </div>
-                <div class="col">
-                    <i class="fa-solid fa-location-pin"></i>
-                    <span class="titulo-detalle">Ubicación</span>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Officiis, provident esse. Nesciunt quod eveniet dolorem
-                        necessitatibus iure, suscipit similique provident fugiat excepturi
-                        commodi
-                    </p>
-                </div>
-                <div class="col">
-                    <i class="fa-solid fa-flag"></i>
-                    <span class="titulo-detalle">Intereses</span>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Officiis, provident esse. Nesciunt quod eveniet dolorem
-                        necessitatibus iure, suscipit similique provident fugiat excepturi
-                        commodi
-                    </p>
-                </div>
-            </div>
-        -->
-            </div>
     </section>
 
     <!-- SECCION PROYECTOS -->
@@ -121,19 +82,19 @@
                     <div style="--i: url('./proyectos/Cost_Evaluation2.jpg');">
                         <button class="boton_galeria"><a class="btn btn-primary"
                                 href="./proyectos/Cost Evaluation Dashboard.pbix" role="button" target="_blank"><i
-                                    class="fa fa-download" aria-hidden="true"></i> Descargar PowerBI</a></button>
+                                    class="fa fa-download" aria-hidden="true"></i> Download PowerBI</a></button>
                         <button class="boton_galeria"><a class="btn btn-primary"
                                 href="./proyectos/Cost Evaluation Dashboard.pdf" role="button" target="_blank"><i
-                                    class="fa fa-download" aria-hidden="true"></i> Descargar PDF</a></button>
+                                    class="fa fa-download" aria-hidden="true"></i> Download PDF</a></button>
                     </div>
                     <div style="--i: url('./proyectos/Migracion2.jpg');">
                         <button class="boton_galeria"><a class="btn btn-primary"
                                 href="./proyectos/PF.Gabriela.Lopez_Migración Mundial.pbix" role="button"
-                                target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Descargar
+                                target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Download
                                 PowerBI</a></button>
                         <button class="boton_galeria"><a class="btn btn-primary"
                                 href="./proyectos/PF.Gabriela.Lopez_Migración Mundial.pdf" role="button"
-                                target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Descargar
+                                target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Download
                                 PDF</a></button>
                     </div>
                 </div>
@@ -184,7 +145,8 @@
                             <td>
                                 <h4>Data Analytics</h4>
                                 <p>Coderhouse</p>
-                                <a class="link_certificado" href="/img/certificado_coderhouse.jpg" target="_blank">Descargar Certificado</a>
+                                <a class="link_certificado" href="/img/certificado_coderhouse.jpg"
+                                    target="_blank">Descargar Certificado</a>
                             </td>
                         </tr>
                     </table>
@@ -194,7 +156,11 @@
                                 <h3>2023</h3>
                             </td>
                             <td rowspan="2" class="descripcion">
-                                PRINCE2®, el método de gestión de proyectos líder en el mundo, refleja la realidad actual de la gestión de proyectos exitosos en el siglo XXI, incorporando los últimos procesos, herramientas y tecnologías para mantenerse a la vanguardia. ¡Las mejores prácticas ahora son aún mejores! PRINCE2 proporciona el conocimiento teórico sobre cómo planificar, gestionar y entregar proyectos de principio a fin.
+                                PRINCE2®, el método de gestión de proyectos líder en el mundo, refleja la realidad
+                                actual de la gestión de proyectos exitosos en el siglo XXI, incorporando los últimos
+                                procesos, herramientas y tecnologías para mantenerse a la vanguardia. ¡Las mejores
+                                prácticas ahora son aún mejores! PRINCE2 proporciona el conocimiento teórico sobre cómo
+                                planificar, gestionar y entregar proyectos de principio a fin.
                             </td>
                         </tr>
                         <tr>
@@ -202,7 +168,8 @@
                                 <h4>Project Management</h4>
                                 <p>Future Learn- PRINCE2Future Learn- PRINCE2
                                     PRINCE2 - 6th Edition Foundation</p>
-                                <a class="link_certificado" href="./img/PRINCE2_Certificado.pdf" target="_blank">Descargar Certificado</a>
+                                <a class="link_certificado" href="./img/PRINCE2_Certificado.pdf"
+                                    target="_blank">Descargar Certificado</a>
                             </td>
                         </tr>
                     </table>
@@ -295,7 +262,7 @@
                         <textarea name="mensaje" class="form-control" id="exampleFormControlTextarea1" rows="3"
                             placeholder="Deje aquí su mensaje..." required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="boton_enviar">Enviar Mensaje</button>
+                    <button type="submit" class="btn btn-primary" id="boton_enviar">Send Message</button>
                 </form>
             </div>
             <div class="fila">
