@@ -398,6 +398,9 @@ html {
 }
 /* SECCION RESPONSIVE */
 @media screen and (max-width: 800px) {
+.sobremi .contenido-seccion .sobre_mi_p{
+    width: auto;
+}
   .habilidades .contenido-seccion .fila {
     display: block;
   }
