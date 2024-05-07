@@ -127,6 +127,17 @@ html {
   top: -100px;
   transform: translateX(-50%);
 }
+.selected_lang{
+    display: flex;
+    gap: 15px;
+    
+}
+.selected_lang .lang_flag{
+    text-decoration: none;
+    border: none;
+    background-color: #1e2326;
+    height: 0px;
+}
 /* estilos generales */
 .titulo-seccion {
   font-family: "Yellowtail";
@@ -318,6 +329,15 @@ html {
   font-size: 20px;
   margin-bottom: 5px;
 }
+.resumen .contenido-seccion .info .col .link_certificado {
+    color: #670139;
+    font-weight: bold;
+    border: 2px solid #670139;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px;
+    text-decoration: none;
+}
 .resumen .contenido-seccion .info .col table p {
   font-size: 14px;
 }
@@ -426,4 +446,7 @@ html {
     display: inline;
     opacity: 0.9;
   }
+  .resumen .contenido-seccion .info .col .link_certificado {
+    font-size: 10px;
+}
 }
