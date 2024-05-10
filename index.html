@@ -25,11 +25,11 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 <nav id="nav" class="nav">
-                    <a href="#inicio">Inicio</a>
-                    <a href="#sobremi">Sobre mí</a>
-                    <a href="#habilidades">Proyectos</a>
-                    <a href="#resumen">Resumen</a>
-                    <a href="#contacto">Contacto</a>
+                    <a href="#inicio" id="menu_inicio">Inicio</a>
+                    <a href="#sobremi" id="menu_sobre_mi">Sobre mí</a>
+                    <a href="#proyectos" id="menu_proyectos">Proyectos</a>
+                    <a href="#resumen" id="menu_resumen">Resumen</a>
+                    <a href="#contacto" id="menu_contacto">Contacto</a>
                     <div class="selected_lang">
                         <li>
                             <button class="lang_flag" onclick="changeLanguage('eng')"><i class="fi fi-gb"></i></button>
@@ -74,9 +74,9 @@
     </section>
 
     <!-- SECCION PROYECTOS -->
-    <section class="habilidades" id="habilidades">
+    <section class="habilidades" id="proyectos">
         <div class="contenido-seccion">
-            <h2 class="titulo-seccion">Mis proyectos</h2>
+            <h2 class="titulo-seccion" id="titulo_proyectos">Mis proyectos</h2>
             <div class="proyectos">
                 <div class="gallery">
                     <div style="--i: url('./proyectos/Cost_Evaluation2.jpg');">
@@ -105,26 +105,23 @@
     <!-- SECCION RESUMEN -->
     <section class="resumen" id="resumen">
         <div class="contenido-seccion">
-            <h2 class="titulo-seccion">Resumen</h2>
-            <h3>Mi preparación y experiencia</h3>
+            <h2 class="titulo-seccion" id="titulo_experiencia1">Resumen</h2>
+            <h3 id="titulo_experiencia2">Mi preparación y experiencia</h3>
             <div class="info">
                 <div class="col">
-                    <span class="titulo">Educación</span>
+                    <span class="titulo" id="titulo_educacion">Educación</span>
                     <table>
                         <tr>
                             <td class="datos">
                                 <h3>2024</h3>
                             </td>
-                            <td rowspan="2" class="descripcion">
-                                A través de este programa, se adquieren conocimientos en áreas clave, incluyendo:
-                                Fundamentos y Herramientas de Análisis de Datos, Análisis Estadístico, Análisis de Datos
-                                para la Toma de Decisiones, Preparación de Datos, Habilidades de Comunicación de Datos;
-                                y diferentes herramientas como: Microsoft Power BI, Hojas de cálculo, SQL, Tableau, R.
+                            <td rowspan="2" class="descripcion" id="cert_google">
+                                (En curso) A través de este programa, incorporo conocimientos en áreas clave, incluyendo: fundamentos y herramientas de Análisis de Datos, Análisis Estadístico, Análisis de Datos para la toma de decisiones, preparación de Datos, habilidades de comunicación de datos; y herramientas como: Microsoft Power BI, Hojas de cálculo, SQL, Tableau, R.
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <h4>Certificado Profesional en Análisis de Datos de Google</h4>
+                                <h4 id="titulo_google">Certificado Profesional en Análisis de Datos de Google</h4>
                                 <p>Coursera</p>
                             </td>
                         </tr>
@@ -134,11 +131,8 @@
                             <td class="datos">
                                 <h3>2023</h3>
                             </td>
-                            <td rowspan="2" class="descripcion">
-                                Conceptos generales de las bases de datos para trabajar sobre bases de datos
-                                relacionales. Utilización de SQL, diseño y desarrollo de tableros de control con la
-                                herramienta Power BI, utilizando DAX (Data Analysis Expressions), Lenguaje M y Power
-                                Query.
+                            <td rowspan="2" class="descripcion" id="coder">
+                                Adquirí conceptos generales de las bases de datos para trabajar sobre Bases de Datos Relacionales. También incorporé utilización de SQL, diseño y desarrollo de tableros de control con la herramienta Power BI, utilizando DAX (Data Analysis Expressions), Lenguaje M y Power Query
                             </td>
                         </tr>
                         <tr>
@@ -146,7 +140,7 @@
                                 <h4>Data Analytics</h4>
                                 <p>Coderhouse</p>
                                 <a class="link_certificado" href="/img/certificado_coderhouse.jpg"
-                                    target="_blank">Descargar Certificado</a>
+                                    target="_blank" id="boton_descarga">Descargar Certificado</a>
                             </td>
                         </tr>
                     </table>
@@ -155,12 +149,8 @@
                             <td class="datos">
                                 <h3>2023</h3>
                             </td>
-                            <td rowspan="2" class="descripcion">
-                                PRINCE2®, el método de gestión de proyectos líder en el mundo, refleja la realidad
-                                actual de la gestión de proyectos exitosos en el siglo XXI, incorporando los últimos
-                                procesos, herramientas y tecnologías para mantenerse a la vanguardia. ¡Las mejores
-                                prácticas ahora son aún mejores! PRINCE2 proporciona el conocimiento teórico sobre cómo
-                                planificar, gestionar y entregar proyectos de principio a fin.
+                            <td rowspan="2" class="descripcion" id="prince">
+                                A través del método de Gestión de Proyectos PRINCE2®, un método líder en el mundo, incorporé los últimos procesos, herramientas y tecnologías para mantenerme a la vanguardia, alcanzando el conocimiento teórico sobre cómo planificar, gestionar y entregar proyectos de principio a fin.
                             </td>
                         </tr>
                         <tr>
@@ -169,19 +159,19 @@
                                 <p>Future Learn- PRINCE2Future Learn- PRINCE2
                                     PRINCE2 - 6th Edition Foundation</p>
                                 <a class="link_certificado" href="./img/PRINCE2_Certificado.pdf"
-                                    target="_blank">Descargar Certificado</a>
+                                    target="_blank" id="boton_descarga2">Descargar Certificado</a>
                             </td>
                         </tr>
                     </table>
                 </div>
                 <div class="col">
-                    <span class="titulo">Experiencia Laboral</span>
+                    <span class="titulo" id="titulo_laboral">Experiencia Laboral</span>
                     <table>
                         <tr>
                             <td class="datos">
-                                <h3>6 meses</h3>
+                                <h3 id="tiempo_marktel_1">6 meses</h3>
                             </td>
-                            <td rowspan="2" class="descripcion">
+                            <td rowspan="2" class="descripcion" id="exp_marktel_1">
                                 Utilizo herramientas y sistemas tecnológicos como Excel para llevar a cabo la limpieza
                                 diaria de las bases de datos del equipo de trabajo, además de preparar informes
                                 detallados que incluyen datos sobre los descuentos más frecuentes, el porcentaje de
@@ -191,16 +181,16 @@
                         <tr>
                             <td>
                                 <h4>Marktel</h4>
-                                <p>Administrativa de Backoffice con responsabilidad de Análisis de Datos.</p>
+                                <p id="cargo_marktel_1">Administrativa de Backoffice con responsabilidad de Análisis de Datos (MÁSMÓVIL).</p>
                             </td>
                         </tr>
                     </table>
                     <table>
                         <tr>
                             <td class="datos">
-                                <h3>6 meses</h3>
+                                <h3 id="tiempo_marktel_2">6 meses</h3>
                             </td>
-                            <td rowspan="2" class="descripcion">Llevé a cabo eficientemente el proceso de colocación de
+                            <td rowspan="2" class="descripcion" id="exp_marktel_2">Llevé a cabo eficientemente el proceso de colocación de
                                 descuentos, cambio de tarifas, cambio de titulares y cambio de domicilio para los
                                 clientes de Grupo MasMovil, logrando una reducción significativa en los tiempos de
                                 procesamiento, dando apoyo a los comerciales. Además, garanticé una respuesta oportuna,
@@ -211,16 +201,16 @@
                         <tr>
                             <td>
                                 <h4>Marktel</h4>
-                                <p>Teleoperadora Recepción Comercial MasMovil.</p>
+                                <p id="cargo_marktel_2">Teleoperadora Recepción Comercial (MÁSMÓVIL).</p>
                             </td>
                         </tr>
                     </table>
                     <table>
                         <tr>
                             <td class="datos">
-                                <h3>6 años</h3>
+                                <h3 id="tiempo_credicoop">6 años</h3>
                             </td>
-                            <td rowspan="2" class="descripcion">Logré mantener un flujo eficiente de transacciones
+                            <td rowspan="2" class="descripcion" id="exp_credicoop">Logré mantener un flujo eficiente de transacciones
                                 financieras, asegurando precisión y seguridad tanto en la gestión de caja como en la
                                 atención al cliente, mientras promovía activamente productos y servicios para aumentar
                                 las ventas y la satisfacción del cliente.
@@ -229,7 +219,7 @@
                         <tr>
                             <td>
                                 <h4>Banco Credicoop</h4>
-                                <p>Auxiliar Integral y Auxiliar de Caja.</p>
+                                <p id="cargo_credicoop">Auxiliar Integral y Auxiliar de Caja.</p>
                             </td>
                         </tr>
                     </table>
@@ -242,14 +232,14 @@
     <!-- SECCION CONTACTO -->
     <section class="contacto" id="contacto">
         <div class="contenido-seccion">
-            <h2 class="titulo-seccion">Contacto</h2>
+            <h2 class="titulo-seccion" id="titulo_contacto">Contacto</h2>
             <div class="formulario">
                 <form target="_blank" action="https://getform.io/f/eapdldoa" method="POST">
                     <div class="formulario-datos">
                         <div class="col-5">
                             <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                             <input name="nombre" type="text" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Nombre" required>
+                                placeholder="Name" required>
                         </div>
                         <div class="col-6">
                             <label for="exampleFormControlInput1" class="form-label">Email</label>
@@ -260,7 +250,7 @@
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                         <textarea name="mensaje" class="form-control" id="exampleFormControlTextarea1" rows="3"
-                            placeholder="Deje aquí su mensaje..." required></textarea>
+                            placeholder="Write your message here..." required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary" id="boton_enviar">Send Message</button>
                 </form>
