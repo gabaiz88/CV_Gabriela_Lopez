@@ -26,6 +26,7 @@ function changeLanguage(lang) {
   location.reload();
 }
 
+//pasando todo a ingles
 var language = {
   eng: {
     menu_inicio: "Start",
@@ -62,11 +63,6 @@ var language = {
     boton_descarga: "Download certificate",
     boton_descarga2: "Download certificate",
   },
-  /*es: {
-        //sobre_mi: "Sobre mí",
-        saludo: "🌸 Hola! Me llamo Gabriela, bienvenid@ a mi perfil! 👋🏼",
-        sobre_mi2: "🔎 En camino a convertirme en Analista de Datos utilizando SQL/ Excel. 📊 Visualización de datos con Power BI. 💻 Conocimientos en Project Management, PRINCE2 Foundation Certificate. 🏦 Experiencia en Servicios Financieros e Industria Bancaria.",
-    },*/
 };
 
 if (window.location.hash) {
@@ -103,6 +99,3 @@ if (window.location.hash) {
   }
 }
 
-// sobre_mi.textContent = language.es.sobre_mi;
-//saludo.textContent = language.es.saludo;
-// sobre_mi2.textContent = language.es.sobre_mi2;
