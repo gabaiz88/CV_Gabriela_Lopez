@@ -261,6 +261,10 @@ html {
   transition: all 0.7s cubic-bezier(0.25, 0.4, 0.45, 1.4);
 }
 
+.habilidades .contenido-seccion .proyectos .gallery > div {
+ opacity: 0.8;
+}
+
 .habilidades .contenido-seccion .proyectos .gallery > div:hover {
   flex: 6;
   opacity: 1;
@@ -476,6 +480,7 @@ html {
 
 /* SECCION RESPONSIVE */
 @media screen and (max-width: 800px) {
+
   .sobremi .contenido-seccion .sobre_mi_p {
     width: auto;
   }
@@ -536,6 +541,7 @@ html {
 
   .habilidades .contenido-seccion .proyectos .gallery > div {
     transition: none;
+    opacity: 1;
   }
 
   .habilidades .contenido-seccion .proyectos .gallery > div:hover {
