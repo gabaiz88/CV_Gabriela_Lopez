@@ -502,6 +502,10 @@ html {
     justify-content: center;
   }
 
+  #proyectos{
+    height: 1450px;
+  }
+
   .sobremi .contenido-seccion .fila {
     display: block;
   }
